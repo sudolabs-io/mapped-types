@@ -1,7 +1,5 @@
-import { Logger, Type } from '@nestjs/common';
-
-/* eslint-disable @typescript-eslint/no-var-requires */
-const logger = new Logger('MappedTypes');
+import 'reflect-metadata';
+import { Type } from './common';
 
 export function applyIsOptionalDecorator(
   targetClass: Function,
@@ -63,10 +61,10 @@ export function inheritValidationMetadata(
         return value.propertyName;
       });
   } catch (err) {
-    logger.error(
+    console.error(
       `Validation ("class-validator") metadata cannot be inherited for "${parentClass.name}" class.`,
     );
-    logger.error(err);
+    console.error(err);
   }
 }
 
@@ -100,10 +98,10 @@ export function inheritTransformationMetadata(
       ),
     );
   } catch (err) {
-    logger.error(
+    console.error(
       `Transformer ("class-transformer") metadata cannot be inherited for "${parentClass.name}" class.`,
     );
-    logger.error(err);
+    console.error(err);
   }
 }
 

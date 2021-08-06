@@ -1,10 +1,10 @@
-import { Type } from '@nestjs/common';
+import { Type } from './common';
 import { MappedType } from './mapped-type.interface';
 import {
   applyIsOptionalDecorator,
   inheritPropertyInitializers,
   inheritTransformationMetadata,
-  inheritValidationMetadata,
+  inheritValidationMetadata
 } from './type-helpers.utils';
 
 export function PartialType<T>(classRef: Type<T>): MappedType<Partial<T>> {
