@@ -1,9 +1,9 @@
-import { Type } from '@nestjs/common';
+import { Type } from './common';
 import { MappedType } from './mapped-type.interface';
 import {
   inheritPropertyInitializers,
   inheritTransformationMetadata,
-  inheritValidationMetadata,
+  inheritValidationMetadata
 } from './type-helpers.utils';
 
 export function OmitType<T, K extends keyof T>(
