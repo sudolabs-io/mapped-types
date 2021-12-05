@@ -19,31 +19,39 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@commitlint/cli": "13.1.0",
-    "@commitlint/config-angular": "13.1.0",
-    "@types/jest": "26.0.24",
-    "@types/node": "14.17.9",
-    "@typescript-eslint/eslint-plugin": "4.29.0",
-    "@typescript-eslint/parser": "4.29.0",
-    "class-transformer": "0.4.0",
-    "class-validator": "0.13.1",
-    "eslint": "7.32.0",
+    "@commitlint/cli": "15.0.0",
+    "@commitlint/config-angular": "15.0.0",
+    "@types/jest": "27.0.3",
+    "@types/node": "16.11.11",
+    "@typescript-eslint/eslint-plugin": "5.5.0",
+    "@typescript-eslint/parser": "5.5.0",
+    "class-transformer": "0.5.1",
+    "class-validator": "0.13.2",
+    "eslint": "8.4.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.23.4",
-    "husky": "7.0.1",
-    "jest": "27.0.6",
-    "lint-staged": "11.1.1",
-    "prettier": "2.3.2",
+    "eslint-plugin-import": "2.25.3",
+    "husky": "7.0.4",
+    "jest": "27.4.3",
+    "lint-staged": "12.1.2",
+    "prettier": "2.5.1",
     "reflect-metadata": "0.1.13",
-    "release-it": "14.10.1",
+    "release-it": "14.11.8",
     "rimraf": "3.0.2",
-    "ts-jest": "27.0.4",
-    "typescript": "4.3.5"
+    "ts-jest": "27.1.0",
+    "typescript": "4.5.2"
   },
   "peerDependencies": {
-    "class-transformer": "^0.2.0 || ^0.3.0 || ^0.4.0",
+    "class-transformer": "^0.2.0 || ^0.3.0 || ^0.4.0 || ^0.5.0",
     "class-validator": "^0.11.1 || ^0.12.0 || ^0.13.0",
     "reflect-metadata": "^0.1.12"
+  },
+  "peerDependenciesMeta": {
+    "class-validator": {
+      "optional": true
+    },
+    "class-transformer": {
+      "optional": true
+    }
   },
   "lint-staged": {
     "*.ts": [
