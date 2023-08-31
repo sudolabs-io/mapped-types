@@ -112,7 +112,8 @@ function inheritTransformerMetadata(
   targetClass: Function,
   isPropertyInherited?: (key: string) => boolean,
 ) {
-  const classTransformer: any = require('class-transformer/cjs/storage');
+  // TODO make it more smarter
+  const classTransformer: any = require(typeof window === 'undefined' ? 'class-transformer/cjs/storage' : 'class-transformer/esm5/storage');
 
   const metadataStorage /*: typeof import('class-transformer/types/storage').defaultMetadataStorage */ =
     classTransformer.defaultMetadataStorage;
