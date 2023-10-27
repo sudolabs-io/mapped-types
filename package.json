@@ -1,10 +1,10 @@
 {
-  "name": "nestjs-mapped-types",
+  "name": "@selmecir/nestjs-mapped-types",
   "version": "3.0.5",
   "description": "Nest - modern, fast, powerful node.js web framework (@mapped-types)",
   "author": "Kamil Mysliwiec",
   "license": "MIT",
-  "url": "https://github.com/koloboid/mapped-types",
+  "url": "https://github.com/sudolabs-tb/mapped-types",
   "scripts": {
     "build": "rimraf -rf dist && tsc -p tsconfig.json",
     "lint": "eslint 'lib/**/*.ts' --fix",
@@ -60,6 +60,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/koloboid/mapped-types"
+    "url": "https://github.com/sudolabs-tb/mapped-types"
   }
 }
